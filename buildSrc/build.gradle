@@ -1,0 +1,11 @@
+repositories {
+    mavenCentral()
+    maven { url 'http://repo.spring.io/snapshot' }
+}
+
+dependencies {
+    compile 'org.cloudfoundry:cloudfoundry-client-reactor:3.3.0.RELEASE'
+    compile 'org.cloudfoundry:cloudfoundry-operations:3.3.0.RELEASE'
+    compile 'io.projectreactor:reactor-core:3.1.2.RELEASE'
+    compile 'io.projectreactor.ipc:reactor-netty:0.7.2.RELEASE'
+}

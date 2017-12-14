@@ -1,0 +1,11 @@
+group 'com.mattmcnew'
+version '1.0-SNAPSHOT'
+
+apply plugin: com.mattmcnew.plugin.CfDeploy
+
+setupServices {
+    apiHost "api.run.pivotal.io"
+    username "$System.env.EMAIL"
+    password "$System.env.PASS"
+}
+
